@@ -6,3 +6,5 @@
 <p>ResNet feature extraction code can be accessed <a href="https://colab.research.google.com/drive/1PJqwT-gTSOnTt5CZiOH-uOArHSUkcBkM?usp=sharing">here</a></p>
 <h2>SVM Classifier File</h2>
 <p>The file where we performned classification using SVM can be accessed <a href="https://colab.research.google.com/drive/1gcctk8T6gmRtfVq5nyuVl7AHBM6ZDSal?usp=sharing">here</a></p>
+<h2>Skin Segmentation Repo</h2>
+<p>This GitHub repository can be accessed <a href="https://github.com/WillBrennan/SemanticSegmentation/tree/master/semantic_segmentation">here</a> </p>
