@@ -7,4 +7,6 @@
 <h2>SVM Classifier File</h2>
 <p>The file where we performed classification using SVM can be accessed <a href="https://colab.research.google.com/drive/1gcctk8T6gmRtfVq5nyuVl7AHBM6ZDSal?usp=sharing">here</a></p>
 <h2>Skin Segmentation Repo</h2>
-<p>This GitHub repository can be accessed <a href="https://github.com/WillBrennan/SemanticSegmentation/tree/master/semantic_segmentation">here</a>, and our use of it can be viewed <a href="https://colab.research.google.com/drive/1dV-hjSqHy5tb9gDJJHdqC1j_En1Wvhsk?usp=sharing">here</a></p>.
+<p>This GitHub repository can be accessed <a href="https://github.com/WillBrennan/SemanticSegmentation/tree/master/semantic_segmentation">here</a>, and our use of it can be viewed <a href="https://colab.research.google.com/drive/1dV-hjSqHy5tb9gDJJHdqC1j_En1Wvhsk?usp=sharing">here</a>.</p>
+<h2>Imge Augmentation</h2>
+<p>The file where we performed augmentation on the images can be accessed <a href="https://colab.research.google.com/drive/15tFEhyLnfNZtYuFrdBLGEz11GRKHDKIj?usp=sharing">here</a></p>
