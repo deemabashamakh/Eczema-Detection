@@ -1,0 +1,541 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: DM-Sans;
+}
+
+@font-face {
+    font-family: DM-Sans;
+    src: url(DMSans-VariableFont_opsz,wght.ttf);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.hidden-div {
+    display: none;
+}
+
+.left-panel {
+    flex: 1; /* 1/3 of the container */
+    background-color: #2356f6;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-panel-admin-homepage {
+    flex: 1; /* 1/3 of the container */
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
+    align-items:start;
+    border-right-style: solid;
+    border-right-color: #efefef;
+    border-right-width: 1px;
+}
+
+.right-panel-admin-homepage {
+    flex: 5;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: start;
+    flex-direction: column;
+}
+.right-panel {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right-panel-admin-homepage-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #ffffff; 
+    width:100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height:max-content;
+}
+
+
+.header-title {
+    font-size: 24px;
+    color: #333; /* Dark grey color */
+    margin: 1em;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333; /* Dark grey color */
+}
+
+.user-greeting {
+    margin-right: 2em;
+}
+
+.user-icon {
+    width: 40px; /* Width of the icon */
+    height: 40px; /* Height of the icon */
+    background-image: url('path-to-your-icon.png'); /* Add the path to your user icon image */
+    background-size: cover;
+    border-radius: 50%; /* Makes it circular */
+    position: relative;
+}
+
+.user-icon::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: #4CAF50; /* Green color to match your provided image */
+    border-radius: 50%;
+    border: 3px solid #f1f1f1; /* Border color to match the background of the header */
+}
+h2 {
+    color: #2356f6;
+}
+h1 {
+    font-family: DM-Sans;
+}
+h1.blue {
+    font-family: DM-Sans;
+    color: #2356f6;
+}
+.gray-text {
+    color: #535252;
+}
+
+.input-group {
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+.input-group input {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border: solid 1px #ccc;
+    border-radius: 15px;
+    margin-left: 12%;
+}
+.left-align-div {
+    width:100%;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+}
+.center-align-div-admin-pfpage {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+} 
+.center-align-div-submit-btn {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+} 
+
+.center-align-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 90%;
+}
+.center-align-div {
+    width:45%;
+    height:50%;
+    text-align: center;
+}
+.left-align-div p {
+    text-align: left;
+    margin-left: 14%;
+    font-size: small;
+    margin-bottom:0em;
+}
+.input-group-admin-profilepage {
+    margin-bottom: 0.5em;
+    /* padding-left: 2em; */
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-group-uploadimage {
+    margin-bottom: 0.5em;
+    /* padding-left: 2em; */
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:70%;
+}
+.input-group-uploadimage input {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border: solid 1px #ccc;
+    border-radius: 15px;
+}
+.input-group-admin-profilepage input {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border: solid 1px #ccc;
+    border-radius: 15px;
+}
+.wide-form {
+    width: 90%;
+}
+.edit-info-p {
+    width: 70%;
+}
+.tab {
+    padding: 10px 20px;
+    font-family: DM-Sans;
+    font-size:large;
+    flex: 1;
+    border: none;
+    background-color: #e8e8e8;
+    color: #535252;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+.tab:hover {
+    background-color: #c6c6c6;
+}
+.tab-left {
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #92b8fe;
+}
+.tab-right {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #92b8fe;
+}
+
+.tab:focus {
+    outline: none;
+}
+
+.tab:active {
+    background-color: #7279e6;
+}
+
+.tab.active {
+    background-color: #92b8fd;
+  }
+
+.btn-login {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2356f6;
+    color: white;
+    font-family: DM-Sans;
+    cursor: pointer;
+}
+.btn-upload {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2356f6;
+    color: white;
+    font-family: DM-Sans;
+    cursor: pointer;
+}
+.btn-save-changes {
+    width: 10%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2356f6;
+    color: white;
+    font-family: DM-Sans;
+    cursor: pointer;
+}
+.btn-send {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2356f6;
+    color: white;
+    cursor: pointer;
+    font-family: DM-Sans;
+    margin-top: 10px;
+}
+
+.forgot-password {
+    color: #2356f6;
+    text-align: center;
+    display: block;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 1em;
+}
+
+.dot {
+    height: 3em;
+    width: 3em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-div {
+    height: 3em;
+    width: 3em;
+    margin-left: 3em;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.tab-container {
+    display: flex;
+}
+.login-container {
+    background-color: #92b8fe;
+    width:45%;
+    height:50%;
+    text-align: center;
+}
+.admin-homepage-sidebar {
+    height: 100%;
+    background-color: #ffffff; /* Adjust the color to match your design */
+    box-sizing: border-box;
+    flex: 1.15;
+}
+
+.sidebar-title {
+    text-align: center;
+    margin-top:1em;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    color: #2356f6; /* Dark text color */
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    font-size: 1em;
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+.sidebar-nav a i {
+    margin-right: 0.5em;
+}
+
+.sidebar-nav a.active {
+    background-color: #ddd; /* Lighter background for active state */
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+}
+
+/* Add a transition effect for hover states */
+.sidebar-nav a:hover {
+    background-color: #ddd;
+}
+.admin-homepage-lower-part {
+    width:100%;
+    height:100%;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
+    overflow: auto;
+}
+
+.admin-homepage-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+    height:35%;
+
+}
+.patient-details-card {
+    background-color: white;
+    width: 45%;
+    height: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+.doctor-details-card {
+    background-color: white;
+    width: 45%;
+    height: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+
+.patient-details-card h2,h3 {
+    margin-left:1.5em;
+    font-weight:normal;
+}
+.patient-details-card h3 {
+    color: #bdbdbd;
+}
+
+.doctor-details-card h2,h3 {
+    margin-left:1.5em;
+    font-weight:normal;
+}
+.doctor-details-card h3 {
+    color: #bdbdbd;
+}
+.patient-details-card hr {
+    width:20%;
+    margin-left:1.5em;
+    background-color: #c6c6c6;
+    border-width: 0;
+    height:1px;
+}
+.patient-details-card h3 a {
+    color: #2356f6;
+    text-decoration:solid;
+}
+
+.doctor-details-card h3 a {
+    color: #2356f6;
+    text-decoration:solid;
+}
+
+.doctor-details-card hr {
+    width:20%;
+    margin-left:1.5em;
+    background-color: #c6c6c6;
+    border-width: 0;
+    height:1px;
+}
+
+.error {
+    color: red;
+    font-size: smaller;
+    /* Additional styling as needed */
+}
+.success {
+    color: green;
+    font-size: smaller;
+    /* Additional styling as needed */
+}
+#doctorcomment
+{
+    height:3em;
+}
+.prev-results-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 10px;
+    height: 100%; /* Adjust the height as needed */
+    width: 100%;
+}
+.prev-results-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%; /* Each card takes up a third of the container width */
+    margin: 1%; /* Provides space between cards */
+    height: 42%; /* Height adjusts to content */
+    overflow: auto;
+}
+.prev-results-card img {
+    width: 100%;
+    height: 9em; /* Fixed height for all images */
+    object-fit: contain; /* Ensures images cover the area without distortion */
+}
+.prev-results-container {
+    padding: 2px 16px;
+}
+table {
+    border: #2356f6;
+    width: 80%;
+    height: auto;
+    background-color: white;
+}
+tr{
+    height: 3em;
+    text-align: center;
+}
+th {
+    text-align: center;
+    color: #2356f6;
+}
+td {
+    width: max-content;
+    text-align: center;
+    overflow-y: auto;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: auto;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+.edit-btn, .delete-btn {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-btn {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+.admin-view-lower-part {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
